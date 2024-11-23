@@ -1,0 +1,46 @@
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+<body style="background-color: #3b3838; color: white">
+<form action="/decks/adddeck" method="POST">
+    <div class="mb-3">
+        <label for="deck_name" class="form-label">Deck Name</label>
+        <input type="text" class="form-control" id="deck_name" name="deck_name" required>
+    </div>
+    <div class="mb-3">
+        <label for="card_1" class="form-label">Card 1</label>
+        <select class="form-select" id="card_1" name="card_1" required>
+            <option selected disabled>Select Card</option>
+            {{cardoptions}}
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="card_2" class="form-label">Card 2</label>
+        <select class="form-select" id="card_2" name="card_2" required>
+            <option selected disabled>Select Card</option>
+            {{cardoptions}}
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="card_3" class="form-label">Card 3</label>
+        <select class="form-select" id="card_3" name="card_3" required>
+            <option selected disabled>Select Card</option>
+            {{cardoptions}}
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="card_4" class="form-label">Card 4</label>
+        <select class="form-select" id="card_4" name="card_4" required>
+            <option selected disabled>Select Card</option>
+            {{cardoptions}}
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="card_5" class="form-label">Card 5</label>
+        <select class="form-select" id="card_5" name="card_5" required>
+            <option selected disabled>Select Card</option>
+            {{cardoptions}}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Add Deck</button>
+</form>
+
+</body>

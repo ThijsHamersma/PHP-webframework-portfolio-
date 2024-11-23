@@ -1,0 +1,12 @@
+{
+  "require": {"psr/http-message": "^1.0",
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Psr\\Http\\": "Nucleus/HTTP/",
+      "App\\":"app",
+      "Nucleus\\":"Nucleus"
+    }
+  }
+}

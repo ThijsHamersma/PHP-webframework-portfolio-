@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #3b3838;
+            color: white;
+        }
+        .container {
+            padding-top: 50px;
+        }
+        .menu-header {
+            margin-bottom: 30px;
+        }
+        .btn-large {
+            font-size: 24px;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            width: 200px;
+            height: 110px;
+        }
+        .btn-large:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="menu-header">Admin Dashboard</h2>
+    <div class="row">
+        <div class="col-md-3">
+            <a href="admin/admincard" class="btn btn-primary btn-block btn-large">Card Dashboard</a>
+        </div>
+        <div class="col-md-3">
+            <a href="admin/adminuser" class="btn btn-primary btn-block btn-large">User Dashboard</a>
+        </div>
+        <div class="col-md-3">
+            <a href="/" class="btn btn-primary btn-block btn-large">Home</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

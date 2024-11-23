@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #3b3838;
+            color: white;
+            font-size: 24px;
+            font-family: 'Cinzel Decorative', serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 40px;
+            color: darkgoldenrod;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .deck {
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .deck h3 {
+            margin-top: 0;
+            color: darkgoldenrod;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .add-button-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .add-button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 30px;
+            background-color: darkgoldenrod;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .add-button:hover {
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1>Decks</h1>
+    <div class="deck">
+        {{deck}}
+    </div>
+    <div class="add-button-container">
+        <a href="/decks/adddeck" class="add-button">New deck</a>
+    </div>
+</div>
+
+</body>
+</html>
